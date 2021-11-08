@@ -27,6 +27,18 @@ var comments__not = `.post__post {
     justify-content: center;
 }
 
+.post-outer {
+    width: 100%;
+}
+
+.date-posts {
+    width: 100%;
+}
+
+.date-outer {
+    width: 100%;
+}
+
 .post__post > .date-outer {
     width: 300px;
     margin: 20px 10px;
