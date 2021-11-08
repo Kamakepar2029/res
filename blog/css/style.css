@@ -59,6 +59,10 @@ a {
     .right_field.closed{
         display:none;
     }
+	
+    .post__post {
+	justify-content: center !important;
+    }
 }
 
 @media screen and (min-width: 600px) {
