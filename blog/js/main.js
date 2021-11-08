@@ -78,7 +78,7 @@ var comments__styles = `.blog-posts.hfeed > .post__post {
     width: 100%;
     height: 10px;
     text-align: center;
-    padding: 15px 0px;
+    padding: 5% 0px;
 }
 
 .post-body.entry-content > .separator > a {
