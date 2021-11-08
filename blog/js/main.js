@@ -144,7 +144,10 @@ for (let k in posts){
         let description = elem.getElementsByClassName('post-body')[0].innerText.trim();
         let date = elem.getElementsByClassName('date-header')[0].innerText;
         let author = elem.getElementsByClassName('g-profile')[0].innerText;
-        let image = '';
+        if (author){
+		author = 'Weebys';
+	}
+	let image = '';
         try{
             image = elem.getElementsByTagName('img')[0].src;
         }catch{
