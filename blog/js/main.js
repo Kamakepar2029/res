@@ -4,19 +4,7 @@ let rys_none = `var VUUKLE_CONFIG = {
   };
 `;
 
-var tolstoy_comments = `
-<script type="text/javascript">!(function(w,d,s,l,x){w[l]=w[l]||[];w[l].t=w[l].t||new Date().getTime();var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=!0;j.src='//web.tolstoycomments.com/sitejs/app.js?i='+l+'&x='+x+'&t='+w[l].t;f.parentNode.insertBefore(j,f);})(window,document,'script','tolstoycomments','3970');</script>
-
-<div class="tolstoycomments-feed"></div>
-<script type="text/javascript">
-	window['tolstoycomments'] = window['tolstoycomments'] || [];
-	window['tolstoycomments'].push({
-		action: 'init',
-		values: {
-			visible: true
-		}
-	});
-</script>`;
+var tolstoy_comments = ``;
 
 //Feed button
 document.getElementsByClassName('rss')[0].setAttribute('href', 'https://feedly.com/i/subscription/feed%2F'+document.location.origin+'/feeds/posts/default%3Falt%3Drss');
@@ -134,17 +122,8 @@ try{
 	document.getElementsByClassName('comments')[0].setAttribute('comments', 'on');
   let r = document.createElement('div');
   r.innerHTML = '<style>'+comments__styles+'</style>';
-  document.getElementsByClassName('comments')[0].innerHTML = tolstoy_comments;
+  //document.getElementsByClassName('comments')[0].innerHTML = tolstoy_comments;
   document.getElementsByClassName('comments')[0].append(r);  
-
-  !(function(w,d,s,l,x){w[l]=w[l]||[];w[l].t=w[l].t||new Date().getTime();var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=!0;j.src='//web.tolstoycomments.com/sitejs/app.js?i='+l+'&x='+x+'&t='+w[l].t;f.parentNode.insertBefore(j,f);})(window,document,'script','tolstoycomments','3970');
-  window['tolstoycomments'] = window['tolstoycomments'] || [];
-	window['tolstoycomments'].push({
-		action: 'init',
-		values: {
-			visible: true
-		}
-	});
 }catch (e){
   let ryu = document.createElement('div');
   ryu.innerHTML = '<style>'+comments__not+'</style>';
