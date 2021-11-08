@@ -27,18 +27,6 @@ var comments__not = `.post__post {
     justify-content: center;
 }
 
-.post-outer {
-    width: 100%;
-}
-
-.date-posts {
-    width: 100%;
-}
-
-.date-outer {
-    width: 100%;
-}
-
 .post__post > .date-outer {
     width: 300px;
     margin: 20px 10px;
@@ -58,6 +46,18 @@ var comments__styles = `.blog-posts.hfeed > .post__post {
     width: 100%;
     padding: 10px 20px;
     justify-content: center !important;
+}
+
+.post-outer {
+    width: 100%;
+}
+
+.date-posts {
+    width: 100%;
+}
+
+.date-outer {
+    width: 100%;
 }
 
 .blog-posts.hfeed .date-header span {
