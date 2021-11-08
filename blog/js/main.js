@@ -136,13 +136,8 @@ try{
   r.innerHTML = '<style>'+comments__styles+'</style>';
   document.getElementsByClassName('comments')[0].innerHTML = tolstoy_comments;
   document.getElementsByClassName('comments')[0].append(r);  
-  // ⛔️ DON'T EDIT BELOW THIS LINE
-  let rysd_nones = `(function() {
-    var d = document,
-      s = d.createElement('script');
-    s.src = 'https://cdn.vuukle.com/platform.js';
-    (d.head || d.body).appendChild(s);
-  })();`;
+
+  !(function(w,d,s,l,x){w[l]=w[l]||[];w[l].t=w[l].t||new Date().getTime();var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=!0;j.src='//web.tolstoycomments.com/sitejs/app.js?i='+l+'&x='+x+'&t='+w[l].t;f.parentNode.insertBefore(j,f);})(window,document,'script','tolstoycomments','3970');
 }catch (e){
   let ryu = document.createElement('div');
   ryu.innerHTML = '<style>'+comments__not+'</style>';
