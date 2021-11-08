@@ -22,6 +22,10 @@ a {
     display: flex;
 }
 
+.post__image{
+	background-size:cover;
+}
+
 h1 {
     font-size: 2em;
 }
