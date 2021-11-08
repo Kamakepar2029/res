@@ -138,6 +138,13 @@ try{
   document.getElementsByClassName('comments')[0].append(r);  
 
   !(function(w,d,s,l,x){w[l]=w[l]||[];w[l].t=w[l].t||new Date().getTime();var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=!0;j.src='//web.tolstoycomments.com/sitejs/app.js?i='+l+'&x='+x+'&t='+w[l].t;f.parentNode.insertBefore(j,f);})(window,document,'script','tolstoycomments','3970');
+  window['tolstoycomments'] = window['tolstoycomments'] || [];
+	window['tolstoycomments'].push({
+		action: 'init',
+		values: {
+			visible: true
+		}
+	});
 }catch (e){
   let ryu = document.createElement('div');
   ryu.innerHTML = '<style>'+comments__not+'</style>';
