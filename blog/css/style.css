@@ -325,3 +325,15 @@ h2 {
 .opacity{
 	animation: 2s make_opacity ease-in-out;
 }
+
+.post-outer {
+    width: 100%;
+}
+
+.date-posts {
+    width: 100%;
+}
+
+.date-outer {
+    width: 100%;
+}
