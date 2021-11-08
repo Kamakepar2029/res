@@ -10,6 +10,18 @@ a {
     text-decoration: none !important;
 }
 
+.status-msg-border {
+    border: 1px solid #dedede;
+    filter: alpha(opacity=40);
+    -moz-opacity: .4;
+    opacity: .4;
+    width: calc(100% - 40px);
+    background: #fff;
+    position: relative;
+    padding: 10px 20px;
+    display: flex;
+}
+
 .logo_after {
     display: flex;
     flex-grow: 100;
