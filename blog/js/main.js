@@ -1,7 +1,8 @@
-var VUUKLE_CONFIG = {
+let rys_none = `var VUUKLE_CONFIG = {
     apiKey: 'f5551baf-79af-444d-bf17-c3d36a675655',
     articleId: document.location.pathname.replace('.html',''),
   };
+`;
 
 //Feed button
 document.getElementsByClassName('rss')[0].setAttribute('href', 'https://feedly.com/i/subscription/feed%2F'+document.location.origin+'/feeds/posts/default');
@@ -122,12 +123,12 @@ try{
   document.getElementsByClassName('comments')[0].innerHTML = `<div id='vuukle-comments'></div><div id='vuukle-emote'></div><div id='vuukle-newsfeed'></div><div class='vuukle-powerbar'></div>`;
   document.getElementsByClassName('comments')[0].append(r);  
   // ⛔️ DON'T EDIT BELOW THIS LINE
-  (function() {
+  let rysd_nones = `(function() {
     var d = document,
       s = d.createElement('script');
     s.src = 'https://cdn.vuukle.com/platform.js';
     (d.head || d.body).appendChild(s);
-  })();
+  })();`;
 }catch (e){
   let ryu = document.createElement('div');
   ryu.innerHTML = '<style>'+comments__not+'</style>';
