@@ -5,7 +5,7 @@ let rys_none = `var VUUKLE_CONFIG = {
 `;
 
 //Feed button
-document.getElementsByClassName('rss')[0].setAttribute('href', 'https://feedly.com/i/subscription/feed%2F'+document.location.origin+'/feeds/posts/default');
+document.getElementsByClassName('rss')[0].setAttribute('href', 'https://feedly.com/i/subscription/feed%2F'+document.location.origin+'/feeds/posts/default%3Falt%3Drss');
 
 //Preloader and search button
 
