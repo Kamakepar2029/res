@@ -120,7 +120,7 @@ try{
 	document.getElementsByClassName('comments')[0].setAttribute('comments', 'on');
   let r = document.createElement('div');
   r.innerHTML = '<style>'+comments__styles+'</style>';
-  document.getElementsByClassName('comments')[0].innerHTML = `<div id='vuukle-comments'></div><div id='vuukle-emote'></div><div id='vuukle-newsfeed'></div><div class='vuukle-powerbar'></div>`;
+  //document.getElementsByClassName('comments')[0].innerHTML = `<div id='vuukle-comments'></div><div id='vuukle-emote'></div><div id='vuukle-newsfeed'></div><div class='vuukle-powerbar'></div>`;
   document.getElementsByClassName('comments')[0].append(r);  
   // ⛔️ DON'T EDIT BELOW THIS LINE
   let rysd_nones = `(function() {
