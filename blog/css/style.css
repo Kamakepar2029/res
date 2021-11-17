@@ -10,6 +10,13 @@ a {
     text-decoration: none !important;
 }
 
+.status-msg-wrap {
+    font-size: 110%;
+    width: calc(100% - 55px) !important;
+    margin: 10px 5px;
+    position: relative;
+}
+
 .status-msg-border {
     border: 1px solid #dedede;
     filter: alpha(opacity=40);
