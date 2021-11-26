@@ -10,6 +10,11 @@ a {
     text-decoration: none !important;
 }
 
+.iframe {
+    width: 100%;
+    border: none;
+}
+
 .status-msg-wrap {
     font-size: 110%;
     width: calc(100% - 55px) !important;
