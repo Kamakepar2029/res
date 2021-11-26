@@ -118,6 +118,13 @@ function make_tags(ddf){
     }
     return strd;
 }
+function frmmeing(){
+	document.getElementsByClassName('comments')[0].innerHTML = '<iframe class="ciframe" src="https://comments.weebys.space/comment.php?p='+encodeURIComponent(document.location.pathname.replaceAll('/','-'))+'"></iframe>';
+  document.getElementsByClassName('comments')[0].append(r);
+  document.getElementsByTagName('iframe')[0].onload=function(){
+     sendMessage();
+  }
+}
 try{
 	document.getElementsByClassName('comments')[0].setAttribute('comments', 'on');
   let r = document.createElement('div');
@@ -127,11 +134,7 @@ try{
   document.getElementsByTagName('iframe')[0].onload=function(){
      sendMessage();
   }
-  document.getElementsByClassName('comments')[0].innerHTML = '<iframe class="ciframe" src="https://comments.weebys.space/comment.php?p='+encodeURIComponent(document.location.pathname.replaceAll('/','-'))+'"></iframe>';
-  document.getElementsByClassName('comments')[0].append(r);
-  document.getElementsByTagName('iframe')[0].onload=function(){
-     sendMessage();
-  }
+  setTimeout(frmmeing,5000);
   window.onresize = function() {
 	  sendMessage();
   }
