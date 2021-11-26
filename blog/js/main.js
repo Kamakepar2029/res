@@ -127,6 +127,9 @@ try{
   document.getElementsByTagName('iframe')[0].onload=function(){
      sendMessage();
   }
+  window.onresize = function() {
+	  sendMessage();
+  }
 }catch (e){
   let ryu = document.createElement('div');
   ryu.innerHTML = '<style>'+comments__not+'</style>';
