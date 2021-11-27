@@ -59,6 +59,10 @@ h1 {
 
 
 @media screen and (max-width: 600px) {
+    .comments{
+        padding: 0px 5px;
+    }
+	
     .trigger_closer {
         display: flex;
         justify-content: center;
